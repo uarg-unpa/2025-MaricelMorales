@@ -8,9 +8,9 @@ public class Ejercicio4 {
 
             System.out.println("ingrese un numero entero");
             num1=  scanner.nextInt();
-            System.out.println("ingrese otro numero enteros");
+            System.out.println("ingrese otro numero entero");
             num2=  scanner.nextInt();
-            System.out.println("ingrese otro numero enteros");
+            System.out.println("ingrese otro numero entero");
             num3=  scanner.nextInt();
 
             if (num1 > num2 & num1 > num3) {
