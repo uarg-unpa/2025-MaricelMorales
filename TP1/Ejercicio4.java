@@ -4,6 +4,7 @@ import java.util.Scanner;
 public class Ejercicio4 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
+            
             int num1 = 1, num2 = 2, num3= 3; 
 
             System.out.println("ingrese un numero entero");
