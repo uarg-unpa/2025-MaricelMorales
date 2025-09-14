@@ -1,27 +1,29 @@
 package TP2;
 
-public class Ejercicio6 {
+public class Ejercicio7 {
     public static void main(String[] args) {
         
-        Fecha f1 = new Fecha(1, 9, 2012); 
-        Fecha f2 = new Fecha(32, 13, -5); 
+        Fechas f1 = new Fechas (13, 6, 2013); 
+        Fechas f2 = new Fechas (1,9, 2011);
+        
         System.out.println("Fecha 1: " + f1.toString());
         System.out.println("Fecha 2: " + f2.toString());
 
-        f2.setDia(15);
-        f2.setMes(10);
-        f2.setAnio(2025);
+        if( f1.getAnio() > f2.getAnio()){
+            System.out.println("Fecha con mayor año: " + f1.toString());
+        } else {
+            System.out.println("Fecha con mayor año: " + f2.toString());
+        }
 
-        System.out.println("Fecha 2 modificada: " + f2.toString());
     }
 }
 
-class Fecha{
+class Fechas {
     private int dia;
     private int mes;
     private int anio;
 
-    public Fecha (int dia, int mes, int anio){
+    public Fechas (int dia, int mes, int anio){
         if(esFechaValida(dia,mes,anio)){
             this.dia = dia;
             this.mes = mes;
@@ -79,25 +81,11 @@ class Fecha{
             this.anio = anio; 
     }
 
-    public String getMesNombre(){
-        switch (mes) {
-            case 1: return "Enero";
-            case 2: return "Febrero";
-            case 3: return "Marzo";
-            case 4: return "Abril";
-            case 5: return "Mayo";
-            case 6: return "Junio";
-            case 7: return "Julio";
-            case 8: return "Agosto";
-            case 9: return "Septiembre";
-            case 10: return "Octubre";
-            case 11: return "Noviembre";
-            case 12: return "Diciembre";
-            default: return "Mes inválido";
-        }
-    }
-
     public String toString(){
-        return dia + " de " + getMesNombre() + " de " + anio;
+        String d = (dia < 10 ? "0" : "") + dia;
+        String m = (mes < 10 ? "0" : "") + mes;
+        String a = (anio <10 ? "0" : "") + anio;
+
+        return d + " / " + m + " / " + a;
     }
 }
