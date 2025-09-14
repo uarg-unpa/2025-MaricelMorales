@@ -1,13 +1,5 @@
 package TP2;
-/*
-5. Una hora se compone de 3 elementos: hora, minutos y segundos. Codificar la clase Hora con los siguientes métodos:  
 
-a) Cuando se crea el objeto de la clase Hora, los valores de hora, minutos y segundos deben ser válidos (es decir, una hora correcta en Argentina). Si alguno es inválido, generar la hora 00:00:00. 
-b) Permitir cambiar la hora, los minutos y los segundos por separado. 
-c) Devolver la hora en minutos. 
-d) Mostrar la hora de la siguiente forma: hh:mm:ss. 
-e) Crear dos objetos de la clase Hora, y probar los métodos correspondientes
- */
 public class Ejercicio5 {
     public static void main(String[] args) {
         Hora h1 = new Hora(13,30,15);
@@ -74,7 +66,5 @@ class Hora {
         String s = (segundos < 10 ? "0" : "") + segundos;
         return h + ":" + m + ":" + s;
     }
-
-
 
 }
