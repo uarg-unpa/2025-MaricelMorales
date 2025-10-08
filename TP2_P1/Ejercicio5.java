@@ -1,4 +1,4 @@
-package TP2;
+package TP2_P1;
 
 public class Ejercicio5 {
     public static void main(String[] args) {
