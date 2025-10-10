@@ -1,4 +1,4 @@
-package TP4_Colas;
+package Ejercicios_extra;
 
 import java.util.Scanner;
 
