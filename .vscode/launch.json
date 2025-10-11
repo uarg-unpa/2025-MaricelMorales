@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Ejercicio6_ver1",
+            "request": "launch",
+            "mainClass": "TP4_Colas.Ejercicio6_ver1",
+            "projectName": "2025-MaricelMorales_ce8ed1b6"
+        },
+        {
+            "type": "java",
+            "name": "Ejercicio6_ver2",
+            "request": "launch",
+            "mainClass": "TP4_Colas.Ejercicio6_ver2",
+            "projectName": "2025-MaricelMorales_ce8ed1b6"
+        },
+        {
+            "type": "java",
             "name": "MainColaNombres",
             "request": "launch",
             "mainClass": "TP4_Colas.MainColaNombres",
