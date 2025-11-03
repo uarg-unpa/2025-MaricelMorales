@@ -6,8 +6,6 @@ public class Ejercicio1 {
         Persona p3 = new Persona ("ana", 19, 'F', 56.6, 1.50);
 
         System.out.println("Persona 3: " + p3.toString());
-
-        
     }
 }
 
