@@ -46,7 +46,7 @@ public class Pila {
 
     public void MostrarPila(){
         if (estaVacia()) {
-            System.out.println("La pila está vacía.");
+            System.out.println("La pila está vacia");
             return;
         }
 
@@ -55,6 +55,6 @@ public class Pila {
             System.out.print(elementos[i] + " ");
         }
         System.out.println();
-}
+    }
 
 }

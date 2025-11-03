@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "principal",
+            "request": "launch",
+            "mainClass": "Ejercicios_extra.Contador_de_energia.principal",
+            "projectName": "2025-MaricelMorales_ce8ed1b6"
+        },
+        {
+            "type": "java",
             "name": "Ejercicio6_ver1",
             "request": "launch",
             "mainClass": "TP4_Colas.Ejercicio6_ver1",
