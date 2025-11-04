@@ -79,9 +79,6 @@ class Cola {
     }
 
     public int desencolar() {
-        if (estaVacia()) {
-            return '\0';
-        }
         int frente = elementos[0];
 
         int i = 0;
@@ -98,7 +95,7 @@ class Cola {
         if (!estaVacia()) {
             return elementos[0]; 
         }
-        return '\0';
+        return -1;
     }
 
     public boolean colasIdenticas(Cola cola2){

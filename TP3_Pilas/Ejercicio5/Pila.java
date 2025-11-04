@@ -20,41 +20,17 @@ public class Pila {
         return cima == MAX - 1;
     }
     public void meter(int elemento) {
-        if (!estaLlena()) {
-            cima++;
-            elementos[cima] = elemento; 
-        } 
+        cima++;
+        elementos[cima] = elemento; 
+        
     }
     public int sacar() {
-        if (!estaVacia()) {
-            int elemento = elementos[cima];
-            cima--;
-            return elemento;
-        } else {
-            return -1; 
-        }
+        int elemento = elementos[cima];
+        cima--;
+        return elemento;
     }
 
-    //El metodo que cumple con la funcion de la consigna 
     public int elementoCima() {
-        if (!estaVacia()) {
-            return elementos[cima];
-        } else {
-            return -1; 
-        }
+        return elementos[cima];
     }
-
-    public void MostrarPila(){
-        if (estaVacia()) {
-            System.out.println("La pila está vacia");
-            return;
-        }
-
-        System.out.print("Pila: ");
-        for (int i = 0; i <= cima; i++) {
-            System.out.print(elementos[i] + " ");
-        }
-        System.out.println();
-    }
-
 }

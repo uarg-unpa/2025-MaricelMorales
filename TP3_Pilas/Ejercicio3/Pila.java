@@ -20,19 +20,13 @@ public class Pila {
     }
 
     public void meter(char elemento) {
-        if (!estaLlena()) {
-            cima++;
-            elementos[cima] = elemento;
-        }
+        cima++;
+        elementos[cima] = elemento;
     }
 
     public char sacar() {
-        if (!estaVacia()) {
-            char elemento = elementos[cima];
-            cima--;
-            return elemento;
-        } else {
-            return '\0';
-        }
+        char elemento = elementos[cima];
+        cima--;
+        return elemento;
     }
 }

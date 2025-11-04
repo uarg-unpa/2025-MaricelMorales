@@ -17,9 +17,18 @@ public class MainColaNombres {
         cola.mostrarCola();
 
         // Desencolar 3 nombres
-        System.out.println("Desencolado: " + cola.desencolar());
-        System.out.println("Desencolado: " + cola.desencolar());
-        System.out.println("Desencolado: " + cola.desencolar());
+        if (!cola.estaVacia()) {
+            String nombreASacar = cola.desencolar();
+            System.out.println("Desencolado: " + nombreASacar);
+        }
+        if (!cola.estaVacia()) {
+            String nombreASacar = cola.desencolar();
+            System.out.println("Desencolado: " + nombreASacar);
+        }
+        if (!cola.estaVacia()) {
+            String nombreASacar = cola.desencolar();
+            System.out.println("Desencolado: " + nombreASacar);
+        }
 
         cola.mostrarCola();
 
@@ -73,11 +82,6 @@ class ColaNombres {
     }
 
     public String desencolar() {
-        if (estaVacia()) {
-            System.out.println("La cola está vacía, no se puede desencolar");
-            return "\0"; 
-        }
-
         String nombre = elementos[frente];
 
         if (frente == ultimo) {

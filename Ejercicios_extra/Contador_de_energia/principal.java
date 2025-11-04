@@ -14,12 +14,10 @@ public class principal {
         while (true) {
             int nivel = sc.nextInt();
             if (!pila.meter(nivel)) {
-                System.out.println("La pila  llena. No se pudo agregar el siguiente nivel de energia: " + nivel);
+                System.out.println("La pila está llena. No se pudo agregar el siguiente nivel de energia: " + nivel);
                 break;
             }
         }
-
-        pila.mostrarPila();
 
         int ElemCima = pila.elementoCima();
         if (ElemCima == -1) {

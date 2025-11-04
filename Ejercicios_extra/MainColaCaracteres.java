@@ -65,10 +65,6 @@ class ColaCaracteres {
     }
 
     public char desencolar() {
-        // Si la cola está vacía, no se puede desencolar
-        if (estaVacia()) {
-            return '\0'; //Devuele valor nulo
-        }
         // Se guarda el primer elemento 
         char frente = elementos[0];
 

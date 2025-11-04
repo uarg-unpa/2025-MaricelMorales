@@ -8,8 +8,6 @@ public class Principal {
         pila.meter(13);
         pila.meter(92);
 
-        pila.MostrarPila();
-
         int ElemCima = pila.elementoCima();
         if (ElemCima == -1) {
             System.out.println("La pila está vacia. No hay elemento en la cima");

@@ -1,10 +1,7 @@
 package TP4_Colas;
 
 import java.util.Scanner;
-/* 
-6. Escribir un método en la clase cola que tenga como argumento una cola del mismo tipo y devuelva verdadero o falso si las dos colas son o no idénticas (tienen el mismo tamaño y poseen los mismos elementos), respectivamente. Nota: no olvidar que, si bien la cola se implementa como un arreglo, no debería manejarse como tal. 
-*/
- 
+
 public class Ejercicio6_ver1 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
@@ -80,9 +77,6 @@ class Cola {
     }
 
     public int desencolar() {
-        if (estaVacia()) {
-            return '\0';
-        }
         int frente = elementos[0];
 
         int i = 0;
@@ -99,7 +93,7 @@ class Cola {
         if (!estaVacia()) {
             return elementos[0]; 
         }
-        return '\0';
+        return -1;
     }
 
     public boolean colasIdenticas(Cola cola2){

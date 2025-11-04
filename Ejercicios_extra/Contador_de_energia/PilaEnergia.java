@@ -27,33 +27,57 @@ public class PilaEnergia {
         return false;
     }
 
+    public int sacar() {
+        int elemento = elementos[cima];
+        cima--;
+        return elemento;
+    }
+
     public int elementoCima() {
-        if (!estaVacia()) {
-            return elementos[cima];
-        }
-        return -1;
+        return elementos[cima];
+
     }
 
     public int contarVecesAparece(int nivelAContar) {
         int contador = 0;
-        for (int i = 0; i <= cima; i++) {
-            if (elementos[i] == nivelAContar) {
+        PilaEnergia auxiliar = new PilaEnergia(nivelAContar);
+
+        while (!estaVacia()) {
+            int aux_nivelAContar = sacar();
+            if (aux_nivelAContar == nivelAContar) {
                 contador++;
             }
+            auxiliar.meter(aux_nivelAContar);
         }
+
+        while (!auxiliar.estaVacia()) {
+            meter(auxiliar.sacar());
+        }
+
         return contador;
     }
 
-    public void mostrarPila() {
-        if (estaVacia()) {
-            System.out.println("La pila está vacia");
-            return;
-        }
+    // este método viola el principio LIFO, se debe utilizar meter y sacar
+    // public int contarVecesAparece(int nivelAContar) {
+    //     int contador = 0;
+    //     for (int i = 0; i <= cima; i++) {
+    //         if (elementos[i] == nivelAContar) {
+    //             contador++;
+    //         }
+    //     }
+    //     return contador;
+    // }
 
-        System.out.println("Niveles de energia en la pila:");
-        for (int i = cima; i >= 0; i--) {
-            System.out.println("| " + elementos[i] + " |");
-        }
-        return;
-    }
+    // No se puede public void mostrarPila() {
+    //     if (estaVacia()) {
+    //         System.out.println("La pila está vacia");
+    //         return;
+    //     }
+
+    //     System.out.println("Niveles de energia en la pila:");
+    //     for (int i = cima; i >= 0; i--) {
+    //         System.out.println("| " + elementos[i] + " |");
+    //     }
+    //     return;
+    // }
 }
