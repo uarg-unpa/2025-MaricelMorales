@@ -79,7 +79,7 @@ class ColaCaracteres {
 
         return frente;
     }
-
+    
     public char peek() {
         //Si no esta vacia, devuelve el primer elemento
         if (!estaVacia()) {

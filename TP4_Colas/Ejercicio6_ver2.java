@@ -10,7 +10,7 @@ public class Ejercicio6_ver2 {
         System.out.print("Ingrese el tamaño máximo de la cola: ");
         int tamaño1 = sc.nextInt();
         
-        Cola cola1 = new Cola(tamaño1);
+        Cola2 cola1 = new Cola2(tamaño1);
 
         for (int i = 0; i < tamaño1; i++) {
             System.out.print("Ingrese un comando: ");
@@ -24,7 +24,7 @@ public class Ejercicio6_ver2 {
         System.out.print("Ingrese el tamaño máximo de la cola: ");
         int tamaño2 = sc.nextInt();
         
-        Cola cola2 = new Cola(tamaño2);
+        Cola2 cola2 = new Cola2(tamaño2);
 
         for (int i = 0; i < tamaño2; i++) {
             System.out.print("Ingrese un comando: ");
@@ -45,12 +45,12 @@ public class Ejercicio6_ver2 {
     }
 }
 
-class Cola {
+class Cola2 {
     private int tamaño;
     private int[] elementos;
     private int ultimo;
 
-    public Cola(int tamaño) {
+    public Cola2(int tamaño) {
         this.tamaño = tamaño;
         elementos = new int[tamaño];
         ultimo = 0; 
