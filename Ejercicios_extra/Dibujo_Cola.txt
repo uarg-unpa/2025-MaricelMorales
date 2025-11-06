@@ -1,0 +1,23 @@
+Ejercicio 1: Dibujo de Movimientos en una Cola (FIFO)
+Dibuja una cola circular de enteros con MAX=5 (usa un array de 5 posiciones, con frente y fin). Simula las siguientes operaciones paso a paso, mostrando el array después de cada una (indica frente y fin con flechas). Usa este mismo archivo.
+1.	Inicial: Cola vacía (frente=0, fin=0).
+2.	Encola 10.
+3.	Encola 20.
+4.	Encola 30.
+5.	Desencola (el más antiguo, 10).
+6.	Encola 40.
+7.	Encola 50.
+8.	Desencola (el más antiguo, 20).
+9.	Encola 60 (observa el movimiento circular).
+
+Para ver la secuencia en el dibujo ver Dibujo1.png
+ 
+Explica en 2-3 oraciones por qué esto demuestra FIFO y qué pasa si intentas encolar en llena. Sube el dibujo con anotaciones.
+
+    La secuencia muestra que es una estructura FIFO porque respeta el principio de que el primero en entrar es el primero en salir: el valor 10 fue el primero en encolarse y también el primero en salir, lo mismo pasa con el 20. En el caso de intentar encolar cuando ULTIMO llega al MAX = 5 su índice vuelve al inicio y utiliza el espacio que queda disponible, pero si la cola está ocupada en todos sus espacios no se podrá insertar un nuevo dato sin sobrescribir el valor mas antiguo. 
+
+Para ver la referencia de lo mencionado ver Dibujo2.png
+
+
+
+
