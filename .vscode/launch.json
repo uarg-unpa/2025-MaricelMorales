@@ -8,6 +8,13 @@
             "type": "java",
             "name": "Principal",
             "request": "launch",
+            "mainClass": "TP4_Colas.Ejercicio7.Principal",
+            "projectName": "2025-MaricelMorales_ce8ed1b6"
+        },
+        {
+            "type": "java",
+            "name": "Principal",
+            "request": "launch",
             "mainClass": "Ejercicios_extra.Reproductor_Musical.Principal",
             "projectName": "2025-MaricelMorales_ce8ed1b6"
         },

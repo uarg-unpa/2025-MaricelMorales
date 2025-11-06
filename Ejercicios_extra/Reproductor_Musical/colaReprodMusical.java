@@ -29,14 +29,6 @@ public class colaReprodMusical {
     }
 
     public void agregarTema(claseTemaMusical tema) {
-        if (estaLlena()){
-            return;
-        }
-
-        if (estaVacia()){
-            frente = 0;
-        }
-
         ultimo = siguiente(ultimo);
         temas[ultimo] = tema;
     }

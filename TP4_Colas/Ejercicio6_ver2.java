@@ -98,8 +98,8 @@ class Cola2 {
         return -1;
     }
 
-    public boolean colasIdenticas(Cola cola2){
-        if (this.getTamaño() == cola2.getTamaño()) {
+    public boolean colasIdenticas(Cola2 cola2){
+if (this.getTamaño() == cola2.getTamaño()) {
             //Se compara cada elemento 
             while (!this.estaVacia() && !cola2.estaVacia()){
                 int dato1 = this.peek();
