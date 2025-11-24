@@ -8,6 +8,20 @@
             "type": "java",
             "name": "Principal",
             "request": "launch",
+            "mainClass": "TP4_Colas.Ejercicio5.Principal",
+            "projectName": "2025-MaricelMorales_ce8ed1b6"
+        },
+        {
+            "type": "java",
+            "name": "principal",
+            "request": "launch",
+            "mainClass": "TP4_Colas.Ejercicio4.principal",
+            "projectName": "2025-MaricelMorales_ce8ed1b6"
+        },
+        {
+            "type": "java",
+            "name": "Principal",
+            "request": "launch",
             "mainClass": "TP4_Colas.Ejercicio8.Principal",
             "projectName": "2025-MaricelMorales_ce8ed1b6"
         },

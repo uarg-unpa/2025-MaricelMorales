@@ -2,6 +2,8 @@ package Ejercicios_extra;
 
 import java.util.Scanner;
 
+//cola circular
+
 public class MainColaNombres {
     public static void main(String[] args) {
         ColaNombres cola = new ColaNombres();

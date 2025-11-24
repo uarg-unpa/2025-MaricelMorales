@@ -2,6 +2,8 @@ package Ejercicios_extra;
 
 import java.util.Scanner;
 
+//cola lineal
+
 public class MainColaCaracteres {
     public static void main(String[] args) {
         ColaCaracteres cola = new ColaCaracteres();
