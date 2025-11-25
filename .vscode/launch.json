@@ -6,6 +6,48 @@
     "configurations": [
         {
             "type": "java",
+            "name": "RecursividadVector",
+            "request": "launch",
+            "mainClass": "RECURSIVIDAD.RecursividadVector",
+            "projectName": "2025-MaricelMorales_ce8ed1b6"
+        },
+        {
+            "type": "java",
+            "name": "SumarDigitos",
+            "request": "launch",
+            "mainClass": "RECURSIVIDAD.SumarDigitos",
+            "projectName": "2025-MaricelMorales_ce8ed1b6"
+        },
+        {
+            "type": "java",
+            "name": "Ejercicio7",
+            "request": "launch",
+            "mainClass": "RECURSIVIDAD.Ejercicio7",
+            "projectName": "2025-MaricelMorales_ce8ed1b6"
+        },
+        {
+            "type": "java",
+            "name": "Ejercicio6",
+            "request": "launch",
+            "mainClass": "RECURSIVIDAD.Ejercicio6",
+            "projectName": "2025-MaricelMorales_ce8ed1b6"
+        },
+        {
+            "type": "java",
+            "name": "Ejercicio5",
+            "request": "launch",
+            "mainClass": "RECURSIVIDAD.Ejercicio5",
+            "projectName": "2025-MaricelMorales_ce8ed1b6"
+        },
+        {
+            "type": "java",
+            "name": "Ejercicio4",
+            "request": "launch",
+            "mainClass": "RECURSIVIDAD.Ejercicio4",
+            "projectName": "2025-MaricelMorales_ce8ed1b6"
+        },
+        {
+            "type": "java",
             "name": "Principal",
             "request": "launch",
             "mainClass": "TP4_Colas.Ejercicio5.Principal",
