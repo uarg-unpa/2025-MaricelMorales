@@ -1,0 +1,13 @@
+if (n<=o){
+  return 0;
+}
+else if(n % 2 ==0){
+  return (n+ SumaPares(n-2));
+}else {
+   return sumaPares(n-1);
+}
+//Para vocales identificar que hay no hay elementos
+//cademna==0
+//isEmpy 
+//size
+//subtring para redicr la cadena 
