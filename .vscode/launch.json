@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "calcularMaximo",
+            "request": "launch",
+            "mainClass": "RECURSIVIDAD.ParaPracticar.calcularMaximo",
+            "projectName": "2025-MaricelMorales_ce8ed1b6"
+        },
+        {
+            "type": "java",
             "name": "RecursividadVector",
             "request": "launch",
             "mainClass": "RECURSIVIDAD.RecursividadVector",

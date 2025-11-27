@@ -7,8 +7,7 @@ public class Ejercicio5 {
     public static int sumaPares(int num) {
         if (num <= 0) {
             return 0; 
-        }
-        if (num % 2 == 0) {
+        } else if (num % 2 == 0) {
             return num + sumaPares(num - 2); 
         } else {
             return sumaPares(num - 1); 

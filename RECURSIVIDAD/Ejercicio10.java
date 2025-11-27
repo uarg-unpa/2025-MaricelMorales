@@ -9,7 +9,7 @@ package RECURSIVIDAD;
 public class Ejercicio10{
     public static int valorMinimo(int [] arr, int n, int indice){
         if (indice==arr.length-1){
-            return arr.[indice];
+            return arr[indice];
         } else{
             int minResto= valorMinimo(arr, n, indice+1);
             if(arr[indice]<minResto){
